@@ -1,0 +1,5 @@
+const URL = "https://vietid.net/login"
+const TELE = "0775613763"
+const PASS_WORD = "Nvietanh3299"
+const NEW_PASS_WORD = "Kingofworld...1"
+const USER_NAME = "nvietanh3299"

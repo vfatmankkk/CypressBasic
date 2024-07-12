@@ -9,11 +9,25 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
+    "@cypress/browserify-preprocessor": "^3.0.2",
     "cypress": "^13.10.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",
     "xpath": "^0.0.34"
   },
   "dependencies": {
+    "cypress-mysql": "^1.0.2",
     "cypress-real-events": "^1.12.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": false,
+      "output": "cypress/cucumberReports/result.json"
+    },
+    "stepDefinitions": [
+      "cypress/e2e/tests/step_definitions/*.{js,ts}"
+    ]
   }
 }

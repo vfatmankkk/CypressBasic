@@ -1,36 +1,57 @@
-const URl = "https://www.saucedemo.com"
-const INPUT_USER_NAME = "#user-name"
-const INPUT_PASSWORD = "#password"
-const BTN_LOGIN = "#login-button"
-const INVENSTORY = "invenstory_list"
+const URLACC = "https://vietid.net/login"
+const USERNAME = "#account"
+const NEXT_BUTTON = ".index-login"
+const ERR_ACC = "//p[@id='err-login']"
+const URLPASS = "https://vietid.net/login/enterPassword";
+const PASSWORD = "input[name='password']"
+const ERR_PASS = "//div[@class='warning error-message']"
+const BTN_LOGIN = ".index-login"
+const LABEL_ONE = "//li[@class='one']"
+const LABEL_TWO = "//li[@class='two']"
+const URL_PROFILE = "https://vietid.net/user/profile"
 
+export default class Login {
+    get getUrlAcc() {
+        return URLACC;
+    }
 
-export default class LoiginUI {
-    get getURL() {
-        return URL
+    get getUserName() {
+        return USERNAME;
     }
-    get getElmInputUsername() {
-        return INPUT_USER_NAME
+
+    get getNextButton() {
+        return NEXT_BUTTON;
     }
-    get getElmInputPassword() {
-        return INPUT_PASSWORD
+
+    get getErrAcc() {
+        return ERR_ACC;
     }
+
+    get getUrlPass() {
+        return URLPASS;
+    }
+
+    get getPassWord() {
+        return PASSWORD;
+    }
+
+    get getErrPass() {
+        return ERR_PASS;
+    }
+
     get getBtnLogin() {
-        return cy.get(BTN_LOGIN);
+        return BTN_LOGIN;
     }
-    get ElmInvenstoryList() {
-        return INVENSTORY_LIST
+
+    get getLabelOne() {
+        return LABEL_ONE;
     }
-    get getBtnLogin() {
-        return cy.get(BTN_LOGIN);
+
+    get getLabelTwo() {
+        return LABEL_TWO;
     }
-    get getElmInputUsername() {
-        return cy.get(INPUT_USER_NAME);
-    }
-    get getElmInputPassword() {
-        return cy.get(INPUT_PASSWORD);
-    }
-    get getInvenstoryList() {
-        return cy.get(INVENSTORY_LIST);
+
+    get getUrlProfile() {
+        return URL_PROFILE;
     }
 }
